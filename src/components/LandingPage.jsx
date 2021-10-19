@@ -48,8 +48,8 @@ function LandingPage() {
                 <code>Is this a duck?</code>
             </p>
             <div className="button-div">
-            <button className="yes" onClick={getBird}>Yes</button>
-            <button className="no" onClick={() => console.log('No')}>No</button>
+                <button className="yes" onClick={getBird}>Yes</button>
+                <button className="no" onClick={() => console.log('No')}>No</button>
             </div>
         </div>
     );
