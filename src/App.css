@@ -31,6 +31,47 @@
   padding: 10vh 10vw;
 }
 
+.button-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.yes {
+  background-color: #4CAF50; /* Green */
+  border: 2px solid #4CAF50;
+}
+
+.yes:hover {
+  border: 2px solid #4CAF50;
+  background-color: white; /* Green */
+  color: black;
+  cursor: pointer;
+}
+
+.no {
+  background-color: #F08080; /* Red */
+  border: 2px solid #F08080;
+}
+
+.no:hover {
+  border: 2px solid #F08080;
+  background-color: white; /* Green */
+  color: black;
+  cursor: pointer;
+}
+
 .App-link {
   color: #61dafb;
 }
