@@ -1,11 +1,8 @@
-// https://some-random-api.ml/animal/birb
-
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-function LandingPage() {
+function LandingPage(props) {
     const [imgUrl, setImgUrl] = useState(null)
-    // const [fact, setFact] = useState(null)
 
     useEffect(() => {
         if (!imgUrl) getBird();
@@ -49,7 +46,7 @@ function LandingPage() {
             </p>
             <div className="button-div">
                 <button className="yes" onClick={getBird}>Yes</button>
-                <button className="no" onClick={() => console.log('No')}>No</button>
+                <button className="no" onClick={props.onPageChange}>No</button>
             </div>
         </div>
     );
