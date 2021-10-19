@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import game from './game.mp3';
 
 function LandingPage(props) {
     const [imgUrl, setImgUrl] = useState(null)
@@ -40,6 +41,7 @@ function LandingPage(props) {
 
     return (
         <div className="main-container">
+            <audio src={game} autoPlay loop/>
             <img src={imgUrl} className="App-logo" alt="logo" />
             <p>
                 <code>Is this a duck?</code>
